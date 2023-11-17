@@ -125,8 +125,9 @@ The integration of BitVM into the BitDC protocol could present a groundbreaking 
 
 # References
 
-Linus, Robert. "BitVM: Compute Anything on Bitcoin" (2023).
+[Linus, Robert. "BitVM: Compute Anything on Bitcoin" (2023).](https://bitvm.org/bitvm.pdf)
 
-Nakamoto, Satoshi. "Bitcoin: A peer-to-peer electronic cash system." (2008).
+[Nakamoto, Satoshi. "Bitcoin: A peer-to-peer electronic cash system." (2008).](https://bitcoin.org/bitcoin.pdf)
 
-Sharma, Nitesh, Mohammad Afzal, and Ankita Dixit. "Blockchain-blockcerts based birth/death certificate registration and validation." International Journal of Information Technology (IJIT) 6.2 (2020).
+[Sharma, Nitesh, Mohammad Afzal, and Ankita Dixit. "Blockchain-blockcerts based birth/death certificate registration and validation." International Journal of Information Technology (IJIT) 6.2 (2020).
+](http://ijitjournal.org/volume-7/issue-5/IJIT-V7I5P4.pdf)
