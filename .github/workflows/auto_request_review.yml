@@ -1,0 +1,24 @@
+name: Auto Assign Reviewers
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  assign-reviewers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Read Maintainers File
+        id: maintainers
+        run: |
+          echo "::set-output name=users::$(cat MAINTAINERS)"
+      
+      - name: Assign reviewers
+        uses: peter-evans/create-pull-request-review@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          pull-request-number: ${{ github.event.pull_request.number }}
+          reviewers: ${{ steps.maintainers.outputs.users }}
