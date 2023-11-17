@@ -196,7 +196,7 @@ Both approaches have their pros and cons. While the DAO approach can reduce the 
 
 # High level implementation overview
 
-Creating a BitDC entry as a JSON file for the Bitcoin Blockchain involves carefully considering the privacy and security of the individual's data while ensuring the entry is functional and verifiable. Here's a high-level idea of what such an entry might look like:
+Creating a BitDC entry as a JSON file for the Bitcoin network involves carefully considering the privacy and security of the individual's data while ensuring the entry is functional and verifiable. Here's a high-level idea of what such an entry might look like:
 
 ### BitDC Entry JSON Structure
 
