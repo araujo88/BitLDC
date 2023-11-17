@@ -29,7 +29,7 @@ The BitDC Protocol offers an innovative approach to managing and certifying life
 9. [Risks](#risks)
    - [Collusion Prevention](#collusion-prevention)
    - [Alternative to Designated Verifiers](#alternative-to-designated-verifiers)
-10. [Redundancy](#redudancy)
+10. [Redundancy](#redundancy)
 11. [Weight System](#weight-system)
 12. [High level implementation overview](#high-level-implementation-overview)
 13. [Future Directions](#future-directions)
