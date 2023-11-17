@@ -10,9 +10,7 @@ The BitDC Protocol offers an innovative approach to managing and certifying life
 
 The verification of death in many societies is heavily reliant on centralized authorities, leading to potential inefficiencies and vulnerabilities. The advent of Bitcoin's distributed ledger technology offers a new paradigm for handling sensitive processes like death certification in a decentralized manner.
 
-In the realm of digital certification, the "Blockchain-Blockcerts based Birth/Death Certificate Registration and Validation" paper has made significant contributions by elucidating the potential of blockchain technology in the issuance and validation of vital records. It specifically focuses on the Blockcerts standard, where a centralized entity, such as an educational institution or government body, issues certificates. 
-
-However, this reliance on centralized issuers, while beneficial for authority and trust, can introduce challenges related to centralization, such as single points of failure and control. 
+In the realm of digital certification, the "Blockchain-Blockcerts based Birth/Death Certificate Registration and Validation" paper has made significant contributions by elucidating the potential of blockchain technology in the issuance and validation of vital records. It specifically focuses on the Blockcerts standard, where a centralized entity, such as an educational institution or government body, issues certificates. However, this reliance on centralized issuers can introduce challenges related to centralization, such as single points of failure and control. 
 
 The BitDC Protocol addresses this critical concern by decentralizing the entire process. Unlike Blockcerts, where the issuer is a centralized authority, BitDC distributes the responsibility of issuing and verifying death certificates across multiple parties using Bitcoin's multi-signature capabilities. 
 
