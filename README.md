@@ -9,6 +9,7 @@ The BitDC Protocol offers an innovative approach to managing and certifying life
 1. [Abstract](#abstract)
 2. [Introduction](#introduction)
    - [Background](#background)
+   - [The Oracle Problem](#the-oracle-problem)
    - [Purpose](#purpose)
 3. [The BitDC Protocol](#the-bitdc-protocol)
    - [Introduction](#introduction)
@@ -26,13 +27,14 @@ The BitDC Protocol offers an innovative approach to managing and certifying life
 7. [Risks](#risks)
    - [Collusion Prevention](#collusion-prevention)
    - [Alternative to Designated Verifiers](#alternative-to-designated-verifiers)
-8. [Future Directions](#future-directions)
+8. [High level implementation overview](#high-level-implementation-overview)
+9. [Future Directions](#future-directions)
    - [Enhanced Privacy and Security](#enhanced-privacy-and-security)
    - [Utilizing BitVM for Enhanced Smart Contracts](#utilizing-bitvm-for-enhanced-smart-contracts)
    - [Expanding the Ecosystem](#expanding-the-ecosystem)
    - [High-Level Language Development](#high-level-language-development)
-9. [Conclusion](#conclusion)
-10. [References](#references)
+10. [Conclusion](#conclusion)
+11. [References](#references)
 
 # Introduction
 
@@ -45,6 +47,40 @@ In the realm of digital certification, the "Blockchain-Blockcerts based Birth/De
 The BitDC Protocol addresses this critical concern by decentralizing the entire process. Unlike Blockcerts, where the issuer is a centralized authority, BitDC distributes the responsibility of issuing and verifying death certificates across multiple parties using Bitcoin's multi-signature capabilities. 
 
 This approach not only enhances security and reduces the risks associated with centralization but also integrates a unique proof of life feature, further strengthening the system's integrity and reliability in managing death certifications.
+
+## The Oracle Problem
+
+The concept of an oracle that serves as an ultimate source of truth for determining whether a person is alive or dead is a complex and multifaceted challenge, especially in the context of digital systems and blockchain technology. Current theories and approaches to such an oracle vary, blending technological solutions with legal, medical, and societal considerations. Here are some of the key theories and approaches:
+
+### 1. Biometric Verification Systems
+- **Continuous Monitoring**: Using wearable devices or other continuous monitoring systems to track vital signs such as heartbeat, breathing, and movement. The absence or abnormal changes in these signs could indicate death.
+- **Challenges**: Privacy concerns, the need for continuous use of devices, and the risk of false positives or negatives due to device malfunction or non-standard physiological conditions.
+
+### 2. Government and Medical Records Integration
+- **Centralized Databases**: Integrating with government and medical databases that record deaths officially. This would involve accessing records from hospitals, morgues, or government registries.
+- **Challenges**: Data privacy issues, the need for global standardization, and the delay between the actual event of death and its official registration.
+
+### 3. Cryptographic Proofs of Life
+- **Periodic Verification**: Individuals could periodically provide cryptographic proof of life, such as a digitally signed message or a transaction, similar to the "proof of life" mechanism in the BitDC protocol.
+- **Challenges**: The system depends on the individual's participation and may not account for sudden deaths.
+
+### 4. AI and Machine Learning
+- **Predictive Analysis**: Employing AI and machine learning algorithms to analyze data trends that could indicate the likelihood of death, based on health records, age, lifestyle, etc.
+- **Challenges**: Ethical implications, the potential for inaccurate predictions, and reliance on extensive personal data.
+
+### 5. Blockchain Oracles
+- **Decentralized Verification**: Utilizing decentralized oracles in blockchain networks that aggregate data from multiple sources to determine a person's life status.
+- **Challenges**: Establishing trust in the sources of information, data synchronization issues, and ensuring oracle reliability.
+
+### 6. Social and Community Verification
+- **Community Reporting**: Leveraging social networks and community reports as a means of verification, where the death of an individual can be reported and verified by a community.
+- **Challenges**: Risk of false reporting, privacy concerns, and the need for a verification mechanism to confirm reports.
+
+### 7. Legal and Ethical Considerations
+- **Legal Frameworks**: Developing legal frameworks that define and regulate the process of declaring someone dead, especially in a digital context.
+- **Challenges**: Varied legal standards across jurisdictions, ethical implications of declaring death, and the integration with existing legal systems.
+
+The creation of a reliable and universally accepted oracle for life and death verification is still a theoretical and developing field. It requires a careful balance of technology, ethics, legality, and social acceptance. As technology advances, particularly in the fields of biometrics, AI, and blockchain, more viable solutions may emerge, but they will always need to be tempered with ethical and legal considerations.
 
 ## Purpose
 
@@ -157,6 +193,75 @@ Both approaches have their pros and cons. While the DAO approach can reduce the 
  - Privacy and Data Management: Requires careful handling of additional data on the Bitcoin's ledger to maintain privacy.
 
  - Accessibility: Must consider individuals who might have difficulty complying with regular digital transactions due to age, health, or access to technology.
+
+# High level implementation overview
+
+Creating a BitDC entry as a JSON file for the Bitcoin Blockchain involves carefully considering the privacy and security of the individual's data while ensuring the entry is functional and verifiable. Here's a high-level idea of what such an entry might look like:
+
+### BitDC Entry JSON Structure
+
+```json
+{
+    "BitDC_Entry": {
+        "entryID": "unique-entry-identifier",
+        "timestamp": "YYYY-MM-DDThh:mm:ssZ",
+        "entryType": "LifeProof | DeathCertification",
+        "person": {
+            "identityHash": "SHA256_hash_of_combined_personal_data"
+        },
+        "proof": {
+            "type": "DigitalSignature | MultiSignature",
+            "data": "encrypted_signature_data"
+        },
+        "verifiers": [
+            {
+                "verifierID": "verifier-1-identifier",
+                "signature": "verifier_signature"
+            },
+            {
+                "verifierID": "verifier-2-identifier",
+                "signature": "verifier_signature"
+            }
+            // Additional verifiers if required
+        ],
+        "additionalInfo": {
+            "locationHash": "SHA256_hash_of_location_if_applicable",
+            "remarks": "Additional encrypted or hashed remarks"
+        }
+    }
+}
+```
+
+### Key Components
+
+- **entryID**: A unique identifier for each BitDC entry.
+- **timestamp**: The date and time when the entry was created.
+- **entryType**: Distinguishes between a life proof ("LifeProof") and a death certification ("DeathCertification").
+- **person**: Contains hashed personal information for privacy.
+  - **identityHash**: This SHA-256 hash is generated from a combination of the individual's name, birthdate, and biometric data. By hashing these elements together as one string, it creates a unique identifier that is much more secure against brute force attacks.
+- **proof**: Information about the proof mechanism used.
+  - **type**: Indicates whether it's a digital signature (for life proofs) or a multi-signature (for death certifications).
+  - **data**: Encrypted data of the signature.
+- **verifiers**: An array of verifiers, particularly for death certifications.
+  - **verifierID**: Identifier for each verifier.
+  - **signature**: The verifier's signature.
+- **additionalInfo**: Optional section for additional information.
+  - **locationHash**: Hashed location data, if relevant.
+  - **remarks**: Any additional remarks, encrypted or hashed for privacy.
+
+### Privacy and Security Considerations
+
+- **identityHash**: This SHA-256 hash is generated from a combination of the individual's name, birthdate, and biometric data. This approach ensures that each individual has a distinct and unique hash, making the identification more secure and less prone to attacks. By hashing these elements together as one string, it creates a unique identifier that is much more secure against brute force attacks.
+- **Encrypted Signature Data**: The actual signatures are encrypted to protect the integrity of the proof.
+- **Verifiers’ Anonymity**: Verifiers are identified by unique identifiers rather than personal information.
+
+### Implementation Notes
+
+- In practice, the combination of personal data (name, birthdate, biometric data) should be standardized to ensure consistency in hash generation.
+- Care must be taken to securely handle and transmit personal data before hashing, to maintain the confidentiality and integrity of the information.
+- The system should be designed to minimize the exposure of personal data, only using the combined hash for identification purposes within the BitDC protocol.
+- This structure is designed to ensure privacy and security while being verifiable on the Bitcoin's distributed ledger.
+- The actual implementation may require adjustments based on the technical constraints of the Bitcoin network and the specific requirements of the BitDC protocol.
 
 # Future Directions
 
