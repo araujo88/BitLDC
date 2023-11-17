@@ -2,7 +2,7 @@
 
 # Abstract
 
-The BitDC Protocol offers an innovative approach to managing and certifying life and death statuses using Bitcoin's distributed ledger technology. Built on the Bitcoin network, it leverages its multi-signature capabilities and integrates a proof of life mechanism. This protocol provides a secure, decentralized, and transparent method to certify death and verify life, aimed at reducing fraud and increasing efficiency in the death certification process.
+The BitDC Protocol offers an innovative approach to managing and certifying life and death statuses using Bitcoin's distributed ledger technology. Built as a second layer on the Bitcoin network, it leverages its multi-signature capabilities and integrates a proof of life mechanism. This protocol provides a secure, decentralized, and transparent method to certify death and verify life, aimed at reducing fraud and increasing efficiency in the death certification process.
 
 ## Table of Contents
 
