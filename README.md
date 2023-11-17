@@ -38,8 +38,8 @@ The BitDC Protocol offers an innovative approach to managing and certifying life
    - [Utilizing BitVM for Enhanced Smart Contracts](#utilizing-bitvm-for-enhanced-smart-contracts)
    - [Expanding the Ecosystem](#expanding-the-ecosystem)
    - [High-Level Language Development](#high-level-language-development)
-13. [Conclusion](#conclusion)
-14. [References](#references)
+15. [Conclusion](#conclusion)
+16. [References](#references)
 
 # Introduction
 
