@@ -4,6 +4,36 @@
 
 The BitDC Protocol offers an innovative approach to managing and certifying life and death statuses using Bitcoin's distributed ledger technology. Built on the Bitcoin network, it leverages its multi-signature capabilities and integrates a proof of life mechanism. This protocol provides a secure, decentralized, and transparent method to certify death and verify life, aimed at reducing fraud and increasing efficiency in the death certification process.
 
+## Table of Contents
+
+1. [Abstract](#abstract)
+2. [Introduction](#introduction)
+   - [Background](#background)
+   - [Purpose](#purpose)
+3. [The BitDC Protocol](#the-bitdc-protocol)
+   - [Introduction](#introduction)
+   - [Creating a BitDC Identity](#creating-a-bitdc-identity)
+4. [Protocol Mechanics](#protocol-mechanics)
+   - [Death Certification Process](#death-certification-process)
+   - [Proof of Life Transactions](#proof-of-life-transactions)
+5. [Security Measures](#security-measures)
+   - [Key Management](#key-management)
+   - [Consensus Integrity](#consensus-integrity)
+6. [Proof of Life](#proof-of-life)
+   - [Dead Man's Switch Activation](#dead-mans-switch-activation)
+   - [Reactivation and Resets](#reactivation-and-resets)
+   - [Advantages](#advantages)
+7. [Risks](#risks)
+   - [Collusion Prevention](#collusion-prevention)
+   - [Alternative to Designated Verifiers](#alternative-to-designated-verifiers)
+8. [Future Directions](#future-directions)
+   - [Enhanced Privacy and Security](#enhanced-privacy-and-security)
+   - [Utilizing BitVM for Enhanced Smart Contracts](#utilizing-bitvm-for-enhanced-smart-contracts)
+   - [Expanding the Ecosystem](#expanding-the-ecosystem)
+   - [High-Level Language Development](#high-level-language-development)
+9. [Conclusion](#conclusion)
+10. [References](#references)
+
 # Introduction
 
 ## Background
