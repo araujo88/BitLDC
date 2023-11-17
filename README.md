@@ -76,7 +76,7 @@ Reactivation should require stringent verification to prevent fraudulent claims 
 
  - Flexibility: Individuals can choose a proof of life frequency that aligns with their lifestyle and risk profile.
 
-## Risks
+# Risks
 
 Implementing the BitDC protocol, which leverages Bitcoin technology for digital death certification, aims to significantly reduce the risk of fraudulent activities, including an individual forging their own death. However, like any system, it is not entirely immune to risks. Here are some potential risks and challenges associated with an individual attempting to forge their own death in the BitDC system:
 
