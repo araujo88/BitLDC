@@ -110,7 +110,7 @@ Preventing collusion between an individual and designated verifiers in a system 
 
 5. **Financial Disincentives**: Establish financial penalties for fraudulent activities, including collusion.
 
-### Alternative to Designated Verifiers:
+## Alternative to Designated Verifiers:
 
 An alternative to using designated verifiers in a multisig approach is to implement a **Decentralized Autonomous Organization (DAO)** system, where the decision to certify a death is made collectively by a larger, decentralized group of participants. This can be achieved through the following method:
 
@@ -120,7 +120,7 @@ An alternative to using designated verifiers in a multisig approach is to implem
 
 Both approaches have their pros and cons. While the DAO approach can reduce the risk of collusion due to the larger and more diverse group of participants, it may also introduce complexity and require more sophisticated governance structures. The key is to balance security, efficiency, descentralization and practicality in the design of the system.
 
-## Considerations
+### Considerations
 
  - Technical Complexity: Increases the complexity of the system, requiring users to understand and regularly engage with the protocol.
  
