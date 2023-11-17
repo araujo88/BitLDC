@@ -158,8 +158,6 @@ Both approaches have their pros and cons. While the DAO approach can reduce the 
 
  - Accessibility: Must consider individuals who might have difficulty complying with regular digital transactions due to age, health, or access to technology.
 
-The inclusion of a proof of life mechanism in the BitDC protocol would significantly enhance its reliability and security. It would help prevent false death certifications while ensuring the system remains user-centric and adaptable to individual needs and circumstances.
-
 # Future Directions
 
 ## Enhanced Privacy and Security
