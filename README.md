@@ -77,7 +77,8 @@ Reactivation should require stringent verification to prevent fraudulent claims 
  - Additional Security Layer: Adds a proactive component to the protocol, enhancing overall security and integrity.
 
  - Flexibility: Individuals can choose a proof of life frequency that aligns with their lifestyle and risk profile.
-Considerations
+
+## Considerations
 
  - Technical Complexity: Increases the complexity of the system, requiring users to understand and regularly engage with the protocol.
  
