@@ -275,7 +275,7 @@ Both approaches have their pros and cons. While the DAO approach can reduce the 
 Combining different techniques of life proof and incorporating various methods for verifier selection could add redundancy and robustness to the BitDC system. This multi-faceted approach can significantly minimize risks and address the complexities of real-life scenarios. Here's how such a system might be structured:
 
 ### Combining Life Proof Techniques
-1. **Biometric Verification**: If present, ttilize wearable technology or biometric sensors to continuously monitor vital signs. These devices can automatically transmit life signals at predefined intervals.
+1. **Biometric Verification**: If present, utilize wearable technology or biometric sensors to continuously monitor vital signs. These devices can automatically transmit life signals at predefined intervals.
 
 2. **Cryptographic Proofs**: Require individuals to periodically submit cryptographic proofs of life, such as digitally signed messages or transactions.
 
