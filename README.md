@@ -112,7 +112,7 @@ BitLDC operates on the Bitcoin ledger, using its multisig technology to create a
 
 ## Creating a BitLDC Identity
 
-Each individual sets up a BitLDC identity by creating a multisig wallet on the Bitcoin network. This wallet is linked to their unique identity, determined by hashing personal data with SHA-256. The wallet is configured to require multiple signatures from pre-selected verifiers to certify death.
+Each individual sets up a BitLDC identity by creating a multisig wallet on the Bitcoin network, which could be viewed as a birth certificate. This wallet is linked to their unique identity, determined by hashing personal data with SHA-256. The wallet is configured to require multiple signatures from pre-selected verifiers to certify death.
 
 # Protocol Mechanics
 
