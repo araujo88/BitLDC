@@ -1,6 +1,6 @@
-# Contributing to BitDC Protocol
+# Contributing to BitLDC Protocol
 
-Thank you for your interest in contributing to the BitDC Protocol! This project is dedicated to developing a comprehensive design and high-level examples for the innovative BitDC system. We value contributions that enhance the clarity, depth, and accuracy of our documentation and examples.
+Thank you for your interest in contributing to the BitLDC Protocol! This project is dedicated to developing a comprehensive design and high-level examples for the innovative BitLDC system. We value contributions that enhance the clarity, depth, and accuracy of our documentation and examples.
 
 ## How to Contribute
 
@@ -9,6 +9,7 @@ Contributions can be made in various forms, such as improving design documents, 
 ### Improving Documentation
 
 If you have suggestions for improving the design documentation:
+
 1. Check the existing documents to see if your suggestion has already been included or discussed.
 2. Open a new issue on GitHub to discuss your suggestion.
 3. For minor changes, feel free to submit a pull request directly.
@@ -16,12 +17,14 @@ If you have suggestions for improving the design documentation:
 ### Proposing New High-Level Examples
 
 To propose a new high-level example or a concept:
+
 1. Open a new issue and tag it as an enhancement or a new example.
 2. Clearly describe your idea, including how it fits into the existing framework and its potential benefits.
 
 ### Pull Requests for Documentation and Examples
 
 When submitting a pull request:
+
 1. Include a clear and detailed description of your changes.
 2. If applicable, reference any related issues.
 3. Ensure that your contributions are well-structured and easy to understand.
