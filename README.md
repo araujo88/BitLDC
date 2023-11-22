@@ -1,4 +1,4 @@
-# BitLDC (Bitcoin Life/Death Certificate) Protocol
+# BitLDC (Bitcoin Life/Death Certification) Protocol
 
 # Abstract
 
